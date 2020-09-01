@@ -22,11 +22,10 @@ lyrics=[
 while True:
     time.sleep(0.75)
     for line in lyrics:
-        # thingtosend = ''
+        thingtosend = line
         # if randstring:
         #     thingtosend=re.sub(r'(...)', r'\1 ', thingtosend, random.randint(0, len(thingtosend)))
-        for char in line:
-            # print(char)
+        for char in thingtosend:
             keyboard.press(char)
             time.sleep(0.01)
             keyboard.release(char)
